@@ -10,8 +10,6 @@
 
 # production
 /build
-.env
-.env/
 
 # misc
 .DS_Store
@@ -32,3 +30,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+.env
+.env/
