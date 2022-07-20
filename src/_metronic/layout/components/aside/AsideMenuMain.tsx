@@ -63,6 +63,18 @@ export function AsideMenuMain() {
         <AsideMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
         <AsideMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
       </AsideMenuItemWithSub>
+
+      
+      <AsideMenuItemWithSub
+        to='/crafted/list'
+        title='List'
+        icon='/media/icons/duotune/communication/com006.svg'
+        fontIcon='bi-person'
+      >
+        <AsideMenuItem to='/crafted/list/search' title='Search' hasBullet={true} />
+      </AsideMenuItemWithSub>
+
+
       <AsideMenuItemWithSub
         to='/error'
         title='Errors'

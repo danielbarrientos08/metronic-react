@@ -69,6 +69,18 @@ export function MenuInner() {
           <MenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
         </MenuInnerWithSub>
 
+        {/* ACCOUNT */}
+        <MenuInnerWithSub
+          title='List'
+          to='/crafted/list'
+          fontIcon='bi-person'
+          hasArrow={true}
+          menuPlacement='right-start'
+          menuTrigger={`{default:'click', lg: 'hover'}`}
+        >
+          <MenuItem to='/crafted/list/search' title='Search' hasBullet={true} />
+        </MenuInnerWithSub>
+
         {/* ERRORS */}
         <MenuInnerWithSub
           title='Errors'
