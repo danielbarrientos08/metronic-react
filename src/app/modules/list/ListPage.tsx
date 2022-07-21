@@ -23,7 +23,6 @@ const ListPage = () => (
     <Route
       element={
         <>
-          <ListHeader />
           <Outlet />
         </>
       }
@@ -32,7 +31,7 @@ const ListPage = () => (
         path='search'
         element={
           <>
-            <PageTitle breadcrumbs={profileBreadCrumbs}>Search</PageTitle>
+            <PageTitle breadcrumbs={profileBreadCrumbs}>Estudiantes por Carrera</PageTitle>
             <SearchComponents />
           </>
         }
