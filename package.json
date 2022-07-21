@@ -2,7 +2,7 @@
   "name": "demo1",
   "version": "8.1.0",
   "private": true,
-  "homepage": "/metronic8/react/demo1",
+  "homepage": "/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
