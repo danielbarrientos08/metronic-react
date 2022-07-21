@@ -71,14 +71,14 @@ export function MenuInner() {
 
         {/* ACCOUNT */}
         <MenuInnerWithSub
-          title='List'
+          title='Estudiantes'
           to='/crafted/list'
           fontIcon='bi-person'
           hasArrow={true}
           menuPlacement='right-start'
           menuTrigger={`{default:'click', lg: 'hover'}`}
         >
-          <MenuItem to='/crafted/list/search' title='Search' hasBullet={true} />
+          <MenuItem to='/crafted/list/search' title='Estudiantes por Carrera' hasBullet={true} />
         </MenuInnerWithSub>
 
         {/* ERRORS */}

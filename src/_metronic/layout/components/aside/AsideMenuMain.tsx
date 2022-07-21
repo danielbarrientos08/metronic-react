@@ -67,11 +67,11 @@ export function AsideMenuMain() {
       
       <AsideMenuItemWithSub
         to='/crafted/list'
-        title='List'
+        title='Estudiantes'
         icon='/media/icons/duotune/communication/com006.svg'
         fontIcon='bi-person'
       >
-        <AsideMenuItem to='/crafted/list/search' title='Search' hasBullet={true} />
+        <AsideMenuItem to='/crafted/list/search' title='Estudiantes por Carrera' hasBullet={true} />
       </AsideMenuItemWithSub>
 
 
