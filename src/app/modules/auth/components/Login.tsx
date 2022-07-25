@@ -5,7 +5,6 @@ import clsx from 'clsx'
 import {Link} from 'react-router-dom'
 import {useFormik} from 'formik'
 import {getUserByToken, login} from '../core/_requests'
-import {toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {useAuth} from '../core/Auth'
 
 const loginSchema = Yup.object().shape({
@@ -47,7 +46,7 @@ export function Login() {
       } catch (error) {
         console.error(error)
         saveAuth(undefined)
-        setStatus('The login detail is incorrect')
+        setStatus('El usuario y/o contraseña son incorrectas')
         setSubmitting(false)
         setLoading(false)
       }
@@ -72,6 +71,18 @@ export function Login() {
         </div> */}
       </div>
       {/* begin::Heading */}
+
+      {formik.status ? (
+        <div className='mb-lg-15 alert alert-danger'>
+          <div className='alert-text font-weight-bold'>{formik.status}</div>
+        </div>
+      ) : (
+        <div className='mb-10 bg-light-info p-8 rounded'>
+          <div className='text-info'>
+            Ingrese su usario y contraseña.
+          </div>
+        </div>
+      )}
 
       {/* begin::Form group */}
       <div className='fv-row mb-10'>
