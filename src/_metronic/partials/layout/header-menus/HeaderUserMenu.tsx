@@ -6,7 +6,9 @@ import {Languages} from './Languages'
 import {toAbsoluteUrl} from '../../../helpers'
 
 const HeaderUserMenu: FC = () => {
+
   const {currentUser, logout} = useAuth()
+  console.log('current: ',currentUser);
   return (
     <div
       className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px'
@@ -20,11 +22,11 @@ const HeaderUserMenu: FC = () => {
 
           <div className='d-flex flex-column'>
             <div className='fw-bolder d-flex align-items-center fs-5'>
-              {currentUser?.first_name} {currentUser?.first_name}
-              <span className='badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2'>Pro</span>
+              {currentUser?.av_per_nombre}
+              <span className='badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2'></span>
             </div>
             <a href='#' className='fw-bold text-muted text-hover-primary fs-7'>
-              {currentUser?.email}
+              {currentUser?.ss_rol_nombre}
             </a>
           </div>
         </div>

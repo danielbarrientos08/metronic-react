@@ -41,13 +41,8 @@ export function requestPassword(email: string) {
 }
 
 export function getUserByToken(token: string) {
-  let config = {
-    headers: {
-      'Authorization': 'Bearer ' + token
-    }
-  }
+  
   return axios.post<UserModel>(GET_USER_BY_ACCESSTOKEN_URL, {
-    api_token: token,
-    config
+    api_token: token
   })
 }
