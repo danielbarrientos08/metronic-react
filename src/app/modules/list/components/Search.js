@@ -78,6 +78,7 @@ export const SearchComponents = () => {
         { field: 'apellidos', headerName: 'Apellidos', width: 150, flex: 1, },
         { field: 'av_pro_nombre', headerName: 'Carrera', minwidth: 300, flex: 2  },
         { field: 'av_periodo', headerName: 'Periodo', minwidth: 130,  flex: 0.5, },
+        { field: 'av_per_nombre', headerName: 'Periodo', minwidth: 130,  flex: 0.5, },
     ];
 
     useEffect(()=>{
@@ -90,9 +91,6 @@ export const SearchComponents = () => {
     <div>
         <div className="card">
             <div className="card-body">
-                <h5 className="card-title text-center p0">LISTADO DE ALUMNOS POR CARRERA Y PERIODO  </h5>
-                <hr></hr>
-                <br></br>
                 <form className="row g-3 needs-validation mt-3" onSubmit={handleSubmit}>
                     <div className="col-md-4">
                         <Autocomplete
@@ -128,7 +126,7 @@ export const SearchComponents = () => {
                     </div>
                  
                     <div className="col-md-3">
-                        <button type='submit' className='btn btn-dark '>Buscar</button>            
+                        <button type='submit' className='btn btn-primary '>Buscar</button>            
                     </div>
                     
                 </form>

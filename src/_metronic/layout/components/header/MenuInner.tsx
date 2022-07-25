@@ -1,7 +1,5 @@
 import React from 'react'
 import {MenuItem} from './MenuItem'
-import {MenuInnerWithSub} from './MenuInnerWithSub'
-import {MegaMenu} from './MegaMenu'
 import {useIntl} from 'react-intl'
 
 export function MenuInner() {
@@ -10,13 +8,12 @@ export function MenuInner() {
     <>
       <MenuItem title={intl.formatMessage({id: 'MENU.DASHBOARD'})} to='/dashboard' />
       <MenuItem title='Layout Builder' to='/builder' />
-      <MenuInnerWithSub
+      {/* <MenuInnerWithSub
         title='Crafted'
         to='/crafted'
         menuPlacement='bottom-start'
         menuTrigger='click'
       >
-        {/* PAGES */}
         <MenuInnerWithSub
           title='Pages'
           to='/crafted/pages'
@@ -56,20 +53,7 @@ export function MenuInner() {
           </MenuInnerWithSub>
         </MenuInnerWithSub>
 
-        {/* ACCOUNT */}
-        <MenuInnerWithSub
-          title='Accounts'
-          to='/crafted/accounts'
-          fontIcon='bi-person'
-          hasArrow={true}
-          menuPlacement='right-start'
-          menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
-          <MenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
-        </MenuInnerWithSub>
 
-        {/* ACCOUNT */}
         <MenuInnerWithSub
           title='Estudiantes'
           to='/crafted/list'
@@ -80,68 +64,16 @@ export function MenuInner() {
         >
           <MenuItem to='/crafted/list/search' title='Estudiantes por Carrera' hasBullet={true} />
         </MenuInnerWithSub>
-
-        {/* ERRORS */}
-        <MenuInnerWithSub
-          title='Errors'
-          to='/error'
-          fontIcon='bi-sticky'
-          hasArrow={true}
-          menuPlacement='right-start'
-          menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='/error/404' title='Error 404' hasBullet={true} />
-          <MenuItem to='/error/500' title='Error 500' hasBullet={true} />
-        </MenuInnerWithSub>
-
-        {/* Widgets */}
-        <MenuInnerWithSub
-          title='Widgets'
-          to='/crafted/widgets'
-          fontIcon='bi-layers'
-          hasArrow={true}
-          menuPlacement='right-start'
-          menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='/crafted/widgets/lists' title='Lists' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/statistics' title='Statistics' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/charts' title='Charts' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/mixed' title='Mixed' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/tables' title='Tables' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/feeds' title='Feeds' hasBullet={true} />
-        </MenuInnerWithSub>
+        
       </MenuInnerWithSub>
 
       <MenuInnerWithSub title='Apps' to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
-        {/* PAGES */}
-        <MenuInnerWithSub
-          title='Chat'
-          to='/apps/chat'
-          icon='/media/icons/duotune/communication/com012.svg'
-          hasArrow={true}
-          menuPlacement='right-start'
-          menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='/apps/chat/private-chat' title='Private Chat' hasBullet={true} />
-          <MenuItem to='/apps/chat/group-chat' title='Group Chart' hasBullet={true} />
-          <MenuItem to='/apps/chat/drawer-chat' title='Drawer Chart' hasBullet={true} />
-        </MenuInnerWithSub>
         <MenuItem
           icon='/media/icons/duotune/general/gen051.svg'
           to='/apps/user-management/users'
           title='User management'
         />
-      </MenuInnerWithSub>
-
-      <MenuInnerWithSub
-        isMega={true}
-        title='Mega menu'
-        to='/mega-menu'
-        menuPlacement='bottom-start'
-        menuTrigger='click'
-      >
-        <MegaMenu />
-      </MenuInnerWithSub>
+      </MenuInnerWithSub> */}
     </>
   )
 }
